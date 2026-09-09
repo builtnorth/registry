@@ -4483,6 +4483,34 @@
           }
         }
       }
+    },
+    "builtnorth/theme-skin-switcher": {
+      "1.0.2": {
+        "name": "builtnorth/theme-skin-switcher",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "type": "library",
+        "description": "Design skin engine and Site Editor switcher for WordPress block themes.",
+        "require": {
+          "php": ">=8.1"
+        },
+        "autoload": {
+          "psr-4": {
+            "ThemeSkinSwitcher\\": "inc/classes/"
+          }
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/builtnorth/theme-skin-switcher/zipball/v1.0.2",
+          "reference": "cdd94ca17ec39fd1b9587f5f619770ee57580a73",
+          "shasum": ""
+        },
+        "source": {
+          "type": "git",
+          "url": "https://github.com/builtnorth/theme-skin-switcher.git",
+          "reference": "cdd94ca17ec39fd1b9587f5f619770ee57580a73"
+        }
+      }
     }
   }
 }
