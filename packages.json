@@ -3839,6 +3839,32 @@
             "BuiltNorth\\WPEnvironmentIndicator\\": "inc/"
           }
         }
+      },
+      "1.0.4": {
+        "name": "builtnorth/wp-environment-indicator",
+        "version": "1.0.4",
+        "version_normalized": "1.0.4.0",
+        "type": "library",
+        "description": "A simple WordPress environment indicator for the admin bar",
+        "require": {
+          "php": ">=8.0"
+        },
+        "autoload": {
+          "psr-4": {
+            "BuiltNorth\\WPEnvironmentIndicator\\": "inc/"
+          }
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/builtnorth/wp-environment-indicator/zipball/v1.0.4",
+          "reference": "6cc08f68b30a0bd45232779df500272cdf220048",
+          "shasum": ""
+        },
+        "source": {
+          "type": "git",
+          "url": "https://github.com/builtnorth/wp-environment-indicator.git",
+          "reference": "6cc08f68b30a0bd45232779df500272cdf220048"
+        }
       }
     },
     "builtnorth/wp-portability": {
