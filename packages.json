@@ -3120,6 +3120,35 @@
             "PolarisAI\\": "inc/classes/"
           }
         }
+      },
+      "2.0.0": {
+        "name": "builtnorth/polaris-ai",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "type": "library",
+        "description": "AI orchestration and capabilities for the Polaris Framework",
+        "require": {
+          "php": ">=8.0",
+          "wordpress/ai-provider-for-anthropic": "^1.0",
+          "wordpress/ai-provider-for-google": "^1.0",
+          "wordpress/ai-provider-for-openai": "^1.0"
+        },
+        "autoload": {
+          "psr-4": {
+            "PolarisAI\\": "inc/classes/"
+          }
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/builtnorth/polaris-ai/zipball/v2.0.0",
+          "reference": "d8eb4ad2245512e64e7544b9a42f4a04c2544229",
+          "shasum": ""
+        },
+        "source": {
+          "type": "git",
+          "url": "https://github.com/builtnorth/polaris-ai.git",
+          "reference": "d8eb4ad2245512e64e7544b9a42f4a04c2544229"
+        }
       }
     },
     "builtnorth/polaris-controls": {
