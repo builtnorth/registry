@@ -3718,6 +3718,36 @@
             "command.php"
           ]
         }
+      },
+      "0.2.2": {
+        "name": "builtnorth/wp-cli-builtnorth",
+        "version": "0.2.2",
+        "version_normalized": "0.2.2.0",
+        "type": "wp-cli-package",
+        "description": "WP-CLI commands for BuiltNorth WordPress development",
+        "require": {
+          "php": ">=8.0",
+          "wp-cli/wp-cli": "^2.5"
+        },
+        "autoload": {
+          "psr-4": {
+            "BuiltNorth\\CLI\\": "src/"
+          },
+          "files": [
+            "command.php"
+          ]
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/builtnorth/wp-cli-builtnorth/zipball/v0.2.2",
+          "reference": "d4745e221642933ee9bbca084a023ed2f863fe0f",
+          "shasum": ""
+        },
+        "source": {
+          "type": "git",
+          "url": "https://github.com/builtnorth/wp-cli-builtnorth.git",
+          "reference": "d4745e221642933ee9bbca084a023ed2f863fe0f"
+        }
       }
     },
     "builtnorth/wp-config": {
