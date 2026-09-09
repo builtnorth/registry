@@ -3189,6 +3189,32 @@
             "PolarisControls\\": "inc/classes/"
           }
         }
+      },
+      "1.0.2": {
+        "name": "builtnorth/polaris-controls",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "type": "library",
+        "description": "Unified gating engine — capabilities, availability, and delegation — for the Polaris Framework",
+        "require": {
+          "php": ">=8.1"
+        },
+        "autoload": {
+          "psr-4": {
+            "PolarisControls\\": "inc/classes/"
+          }
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/builtnorth/polaris-controls/zipball/v1.0.2",
+          "reference": "b1f6cd4ccc06fda8fa8456e7dee07f8f8fc1c140",
+          "shasum": ""
+        },
+        "source": {
+          "type": "git",
+          "url": "https://github.com/builtnorth/polaris-controls.git",
+          "reference": "b1f6cd4ccc06fda8fa8456e7dee07f8f8fc1c140"
+        }
       }
     },
     "builtnorth/polaris-integrations-lib": {
