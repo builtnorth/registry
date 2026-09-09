@@ -1,0 +1,52 @@
+[
+	{
+		"name": "builtnorth/polaris-analytics",
+		"repo": "polaris-analytics",
+		"zip": "polaris-analytics.zip"
+	},
+	{
+		"name": "builtnorth/polaris-backup",
+		"repo": "polaris-backup",
+		"zip": "polaris-backup.zip"
+	},
+	{
+		"name": "builtnorth/polaris-blocks",
+		"repo": "polaris-blocks",
+		"zip": "polaris-blocks.zip"
+	},
+	{
+		"name": "builtnorth/polaris-dashboard",
+		"repo": "polaris-dashboard",
+		"zip": "polaris-dashboard.zip"
+	},
+	{
+		"name": "builtnorth/polaris-directory",
+		"repo": "polaris-directory",
+		"zip": "polaris-directory.zip"
+	},
+	{
+		"name": "builtnorth/polaris-forms",
+		"repo": "polaris-forms",
+		"zip": "polaris-forms.zip"
+	},
+	{
+		"name": "builtnorth/polaris-performance",
+		"repo": "polaris-performance",
+		"zip": "polaris-performance.zip"
+	},
+	{
+		"name": "builtnorth/polaris-reviews",
+		"repo": "polaris-reviews",
+		"zip": "polaris-reviews.zip"
+	},
+	{
+		"name": "builtnorth/polaris-security",
+		"repo": "polaris-security",
+		"zip": "polaris-security.zip"
+	},
+	{
+		"name": "builtnorth/polaris-seo",
+		"repo": "polaris-seo",
+		"zip": "polaris-seo.zip"
+	}
+]

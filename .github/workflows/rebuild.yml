@@ -1,0 +1,68 @@
+name: Rebuild Composer repository
+
+on:
+    repository_dispatch:
+        types: [plugin-released, package-released]
+    workflow_dispatch:
+        inputs:
+            prerelease:
+                description: "Include GitHub prerelease tags"
+                required: false
+                type: boolean
+                default: false
+
+permissions:
+    contents: write
+
+concurrency:
+    group: composer-packages-json
+    cancel-in-progress: false
+
+jobs:
+    rebuild:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+
+            - name: Generate and publish packages.json
+              env:
+                  GH_TOKEN: ${{ secrets.POLARIS_PLUGIN_GITHUB_TOKEN }}
+              run: |
+                  if [ -z "$GH_TOKEN" ]; then
+                    echo "POLARIS_PLUGIN_GITHUB_TOKEN is required to list private GitHub releases"
+                    exit 1
+                  fi
+                  ARGS=""
+                  if [ "${{ github.event.inputs.prerelease }}" = "true" ]; then
+                    ARGS="--prerelease"
+                  fi
+
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+                  node bin/generate.mjs $ARGS
+
+                  # packages.json is fully regenerated each run. On push rejection,
+                  # regenerate against the new origin/main — the generator is idempotent.
+                  for i in 1 2 3 4 5 6; do
+                    git add packages.json
+                    if git diff --cached --quiet; then
+                      echo "packages.json unchanged"
+                      exit 0
+                    fi
+                    git commit -m "chore: rebuild Composer packages index"
+                    if git push; then
+                      exit 0
+                    fi
+                    echo "Push rejected, regenerating against latest main (attempt $i)..."
+                    git fetch origin main
+                    git reset --hard origin/main
+                    node bin/generate.mjs $ARGS
+                    sleep $((i * 2))
+                  done
+                  echo "Failed to push packages.json after retries"
+                  exit 1

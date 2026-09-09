@@ -1,0 +1,17 @@
+[
+	{ "name": "builtnorth/coding-standards", "repo": "coding-standards" },
+	{ "name": "builtnorth/extended-cpts-extras", "repo": "extended-cpts-extras" },
+	{ "name": "builtnorth/instant-actions", "repo": "instant-actions" },
+	{ "name": "builtnorth/job-dispatcher", "repo": "job-dispatcher" },
+	{ "name": "builtnorth/polaris", "repo": "polaris" },
+	{ "name": "builtnorth/polaris-ai", "repo": "polaris-ai" },
+	{ "name": "builtnorth/polaris-controls", "repo": "polaris-controls" },
+	{ "name": "builtnorth/polaris-integrations-lib", "repo": "polaris-integrations-lib" },
+	{ "name": "builtnorth/wp-baseline", "repo": "wp-baseline" },
+	{ "name": "builtnorth/wp-cli-builtnorth", "repo": "wp-cli-builtnorth" },
+	{ "name": "builtnorth/wp-config", "repo": "wp-config" },
+	{ "name": "builtnorth/wp-environment-indicator", "repo": "wp-environment-indicator" },
+	{ "name": "builtnorth/wp-portability", "repo": "wp-portability" },
+	{ "name": "builtnorth/wp-schema", "repo": "wp-schema" },
+	{ "name": "builtnorth/wp-utility", "repo": "wp-utility" }
+]
