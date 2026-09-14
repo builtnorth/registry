@@ -4511,6 +4511,30 @@
           "reference": "cdd94ca17ec39fd1b9587f5f619770ee57580a73"
         }
       }
+    },
+    "builtnorth/wp-mock-stand-ins": {
+      "1.0.0": {
+        "name": "builtnorth/wp-mock-stand-ins",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "type": "library",
+        "description": "Minimal WordPress core class stand-ins for WP_Mock-based PHPUnit tests (WP_Error, WP_Query, WP_REST_Request, etc.) — no WordPress install required.",
+        "require": {
+          "php": ">=8.0"
+        },
+        "autoload": {},
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/builtnorth/wp-mock-stand-ins/zipball/v1.0.0",
+          "reference": "bd0b53088cbbc9efd362fcaa6d6bb5577a3f882e",
+          "shasum": ""
+        },
+        "source": {
+          "type": "git",
+          "url": "https://github.com/builtnorth/wp-mock-stand-ins.git",
+          "reference": "bd0b53088cbbc9efd362fcaa6d6bb5577a3f882e"
+        }
+      }
     }
   }
 }
