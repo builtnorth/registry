@@ -1,5 +1,10 @@
 [
 	{
+		"name": "builtnorth/polaris-add-on-business-profile",
+		"repo": "polaris-business-profile",
+		"zip": "polaris-business-profile.zip"
+	},
+	{
 		"name": "builtnorth/polaris-analytics",
 		"repo": "polaris-analytics",
 		"zip": "polaris-analytics.zip"
